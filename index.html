@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Roughly_'s Site</title>
+
+    <meta name=”viewport” content=”width=device-width,initial-scale=1.0”>
+
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/bootstrap.js"></script>
+</head>
+<body>
+
+<div class="header">
+    <div class="header-right">
+        <a class="active" href="#">Home</a>
+        <a href="https://www.spigotmc.org/members/zbll.864229/">My Spigot Account</a>
+        <a href="https://www.spigotmc.org/resources/authors/zbll.864229/">My Spigot Plugins</a>
+        <a href="./truefight.html">TrueFight: One of the best PVP-oriented servers</a>
+        <a href="https://github.com/ZBLL-CUBER/">My GitHub Account</a>
+        <a href="https://discord.com/invite/bBge7bj3ra">My Discord Support</a>
+        <a href="https://www.donationalerts.com/r/zbll">Donate</a>
+        <a href="ue.html">UnderscoreEnchants: Manage it online!</a>
+    </div>
+</div>
+
+<div class="center">
+    <h1>I am Roughly_</h1>
+    <h5 id="edit"></h5>
+</div>
+<footer class="center footer">
+    <h6>2022 - present, by ZBLL/Roughly_ ♥</h6>
+    <h6>not your best frontend dev for sure</h6>
+    <h6>contact me at <a href="mailto:thejam2000000@gmail.com">thejam2000000 (at) gmail.com</a></h6>
+</footer>
+
+<script lang="javascript">
+
+    all = [
+        "I am a Spigot plugins developer",
+        "I am a fellow Minecraft player",
+        "I am a fellow Genshin Impact player",
+        "I am a fellow Geometry Dash player",
+        "I am a fellow speedcuber",
+
+        "I started coding at the age of 8",
+        "I am a JetBrains enjoyer",
+        "I am a Java developer",
+        "I hate web-development",
+        "I had to use JavaScript for the first time to make this a thing",
+        "I don't like Rust",
+
+        "I prefer pizza over sushi",
+        "I love apple juice",
+        "I prefer ice-cold water over any hotter variant of water",
+        "I like coffee",
+        "I like black tea",
+
+        "I developed UnderscoreEnchants",
+        "I am the head developer and owner of TrueFight",
+
+        "I tried coding for Android when I was 11-12",
+        "I tried making music (and it wasn't awful)",
+
+        "I love cats",
+        "I love dogs just as much as cats",
+
+        "I am in two minds about GitHub",
+
+        "I've been studying English for 8 years and counting",
+
+        "I love The Weeknd",
+        "I love NF",
+        "I love Eminem",
+
+        "I like to say that I don't have friends even though I have some..?",
+
+        "I use Windows",
+        "I use ElementaryOS on my laptop",
+
+        "I tried self-hosting a Minecraft server for testing purposes",
+        "I threw a tantrum and bought a hosting after my hosting proved to be buggy"
+    ]
+
+    let element = document.getElementById("edit")
+
+    element.innerHTML = all[Math.floor(Math.random()*all.length)]
+    setInterval(function () {
+        element.innerHTML = all[Math.floor(Math.random()*all.length)]
+    }, 4000)
+</script>
+</body>
+</html>

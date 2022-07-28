@@ -1,0 +1,188 @@
+*
+  margin: 0
+  padding: 0
+  list-style: none
+  font-family: Helvetica, serif
+  box-sizing: border-box
+
+.center
+  width: 100%
+  text-align: center
+
+
+.footer
+  border-top: 2px solid rgba(170, 170, 170, 0.4)
+  padding: 15px 15px 0
+  position: fixed
+  text-align: center
+  width: 100%
+  color: black
+  bottom: 5px
+  a
+    text-decoration: none
+    transition: all ease-in-out .4s
+    color: #414141
+  h6
+    padding: 0
+.footer h6 a:hover
+  font-size: 16.5px
+  color: cadetblue
+
+/* */
+
+body
+  background: rgb(224,176,207)
+  background: radial-gradient(circle, rgba(224,176,207,1) 0%, rgba(209,178,212,1) 56%, rgba(238,174,202,1) 73%, rgba(148,187,233,1) 100%)
+
+///////////////////////////////////////////////////////////
+
+/**
+  .trigger
+  margin-left: 15px
+  .custom-select
+    width: auto
+    background: rgb(224,176,207)
+    border: 1px solid black
+    border-radius: 5px
+  a
+    text-decoration: none
+
+  .creating-enchantment
+  width: 50%
+  height: 100%
+  float: left
+  border-top: 2px solid rgba(170, 170, 170, 0.4)
+  border-right: 2px solid rgba(170, 170, 170, 0.4)
+  padding: 5px
+
+  */
+
+.cards
+  display: inline-block
+
+.cardslot
+  display: flex
+  float: left
+  justify-content: center
+  align-items: center
+  width: 100%
+
+.card
+  margin: 50px 50px 50px
+  padding: 10px
+  width: 400px
+  height: auto
+  background: rgb(251,63,181)
+  background: radial-gradient(circle, rgba(251,63,181,1) 0%, rgba(224,132,152,1) 33%, rgba(166,182,215,1) 66%, rgba(123,224,219,1) 100%)
+  border: 2px solid #696969
+  display: flex
+  text-align: center
+  a
+    text-decoration: none
+    color: black
+  .name
+    font-size: 28px
+    transition: .5s ease-in-out all
+  img
+    transition: .5s ease-in-out all
+
+.card:hover
+  img
+    width: 22%
+  .name
+    color: white
+    font-size: 30px
+
+
+.card
+  animation: 2s ease-in-out 0s 1 appear
+
+@keyframes appear
+  0%
+    transform: scale(0)
+  50%
+    transform: scale(1)
+
+///////////////////////////////////////////////////////////
+
+.icondiv
+  width: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+  text-align: center
+  .packicon
+    width: 15%
+
+.info
+  overflow: hidden
+  text-align: center
+  div
+    width: 40%
+    height: 100%
+    float: left
+    margin: 50px 0 0
+
+.info div:first-child
+  border-right: 1px solid black
+  padding-right: 3%
+  margin-left: 2%
+
+.info div:nth-child(2)
+  padding-left: 3%
+  margin-right: 2%
+
+pre code
+  background-color: rgba(210, 210, 210, 0.4)
+  border: 1px solid #999
+  display: block
+  padding: 20px
+
+h5 a
+  text-decoration: none
+
+/* i am not a frontend guy and definitely not a web guy so i took this from https://www.w3schools.com/howto/howto_css_responsive_header.asp */
+
+.header 
+  overflow: hidden
+  width: 100%
+  padding: 20px 10px
+  background: rgb(224,176,207)
+  background: radial-gradient(circle, rgba(224,176,207,1) 0%, rgba(209,178,212,1) 56%, rgba(238,174,202,1) 73%, rgba(148,187,233,1) 100%)
+
+.header a
+  margin-left: 5%
+  color: black
+  text-align: center
+  padding: 12px
+  text-decoration: none
+  font-size: 18px
+  line-height: 25px
+  border-radius: 4px
+  width: 30%
+  border: 1px solid rgba(235, 213, 227, 0.2)
+
+.header a:not(:first-child)
+  margin-top: 3px
+
+.header a:hover 
+  background-color: #ddd
+  color: black
+  transition: .2s all
+
+.header a.active 
+  background-color: dodgerblue
+  color: white
+
+.header-right 
+  float: right
+
+@media screen and (max-width: 500px) 
+.header a 
+  float: none
+  display: block
+  text-align: left
+
+.header-right 
+  float: none
+

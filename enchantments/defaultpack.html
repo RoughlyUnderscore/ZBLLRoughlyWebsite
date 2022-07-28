@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name=”viewport” content=”width=device-width,initial-scale=1.0”>
+
+    <title>UnderscoreEnchants</title>
+
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/bootstrap.js"></script>
+</head>
+<body>
+
+<div class="header">
+    <div class="header-right">
+        <a href="../index.html">Home</a>
+        <a href="https://www.spigotmc.org/members/zbll.864229/">My Spigot Account</a>
+        <a href="https://www.spigotmc.org/resources/authors/zbll.864229/">My Spigot Plugins</a>
+        <a href="../truefight.html">TrueFight: One of the best PVP-oriented servers</a>
+        <a href="https://github.com/ZBLL-CUBER/">My GitHub Account</a>
+        <a href="https://discord.com/invite/bBge7bj3ra">My Discord Support</a>
+        <a href="https://www.donationalerts.com/r/zbll">Donate</a>
+        <a href="../ue.html">UnderscoreEnchants: Manage it online!</a>
+    </div>
+</div>
+
+<div class="content">
+    <h1 class="center">Default Pack</h1>
+    <div class="icondiv">
+        <img class="packicon" src="../img/defaultpackicon.png" alt="Icon">
+    </div>
+
+    <h4 class="description center">This is the default enchantments pack! Contains 63 enchantments ready to be used out of the box.</h4>
+
+    <div class="info">
+        <div class="tutorial">
+            <h3 class="center">How to install</h3>
+            <h5>This pack is a built-in! Just execute the following command, and it will swiftly download and initialize all the enchantments in the pack:</h5>
+            <pre><code>/ue download default true</code></pre>
+            <h5>If you just want to download the pack, but not install it just yet, execute the following command:</h5>
+            <pre><code>/ue download default false</code></pre>
+            <h5 class="fw-bold">Permission required:</h5>
+            <h4 class="fw-light">underscoreenchants.download or underscoreenchants.*</h4>
+            </div>
+        <div class="enchantments">
+            <h3 class="center">Enchantments list</h3>
+            <h5>Here you can see all the enchantments of this pack in detail! You can also find them
+                <a href="https://github.com/ZBLL-CUBER/UnderscoreEnchants#default-enchantment-list">here.</a>
+            </h5>
+
+            <br>
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Enchantment name</th>
+                        <th scope="col">Chance</th>
+                        <th scope="col">Trigger</th>
+                        <th scope="col">Cooldown</th>
+                        <th scope="col">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">Adjusting</th>
+                    <td>Level 1: 2%</td>
+                    <td><a href="https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERHITPLAYER">PLAYERHITPLAYER</a></td>
+                    <td>None</td>
+                    <td>With a 2% chance, the damager's hand item gets repaired</td>
+                </tr>
+                <tr>
+                    <th scope="row">Adrenaline</th>
+                    <td>All levels (1-5): 100%</td>
+                    <td><a href="https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERHITPLAYER">PLAYERHITPLAYER</a></td>
+                    <td>None</td>
+                    <td>Recalculates the damage, formula: dmg = dmg - (hp - maxhp) * lvl * 0.125</td>
+                </tr>
+                <tr>
+                    <th scope="row">Beheading</th>
+                    <td>All levels (1): 100%</td>
+                    <td><a href="https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERHITPLAYER">PLAYERHITPLAYER</a></td>
+                    <td>None</td>
+                    <td>When killing a player, the victim's head is given to the killer</td>
+                </tr>
+                <tr>
+                    <th scope="row">Better Riptide</th>
+                    <td>All levels (1): 100%</td>
+                    <td><a href="https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERTOGGLESNEAK">PLAYERTOGGLESNEAK</a></td>
+                    <td>30s</td>
+                    <td>During rain, sneak to dash.</td>
+                </tr>
+                <tr>
+                    <th scope="row"> Block</th>
+                    <td>Level 1: 3%<br>Level 2: 5%<br>Level 3: 7%<br>Level 4: 9%<br>Level 5: 11%<br>Level 6: 13%<br>Level 7-10: 15%</td>
+                    <td><a href="https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERHITPLAYER">PLAYERHITPLAYER</a></td>
+                    <td>None</td>
+                    <td>Upon being hit, there's a chance to neglect the damage and yeet the damager.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Bloodthirsty</th>
+                    <td>Level 1: 3<br>Level 2-3: 5%<br></td>
+                    <td><a href="https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERHITPLAYER">PLAYERHITPLAYER</a></td>
+                    <td>None</td>
+                    <td>Upon hitting a player, there's a small chance to get Strength.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Businessman</th>
+                    <td>All levels (1-5): 25%</td>
+                    <td><a href="https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERHITPLAYER">PLAYERHITPLAYER</a></td>
+                    <td>None</td>
+                    <td>Upon hitting a player, there's a chance to earn N money, where N is the enchantment level.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Consistency</th>
+                    <td>All levels (1-3): 100%</td>
+                    <td><a href="https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERHITPLAYER">PLAYERHITPLAYER</a></td>
+                    <td>None</td>
+                    <td>Upon dealing under N damage, you deal N true damage instead, where N is the enchantment level.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Desperate</th>
+                    <td>All levels (1): 100%</td>
+                    <td><a href="https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERHITPLAYER">PLAYERHITPLAYER</a></td>
+                    <td>None</td>
+                    <td>Upon dying, yeet and damage the damager for them to meet the same fate.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Dislocate</th>
+                    <td>Level 1: 10%<br>Level 2: 12%<br>Level 3: 15%</td>
+                    <td><a href="https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERHITPLAYER">PLAYERHITPLAYER</a></td>
+                    <td>None</td>
+                    <td>Upon hitting a player, there's a small chance to randomly change their camera angle.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Disspeller</th>
+                    <td>Level 1: 10%<br>Level 2: 11%<br>Level 3: 12%</td>
+                    <td><a href="https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERHITPLAYER">PLAYERHITPLAYER</a></td>
+                    <td>None</td>
+                    <td>Upon hitting a player, there's a small chance to remove all their positive effects.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Doctor</th>
+                    <td>All levels (1): 10%</td>
+                    <td><a href="https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERBREAKBLOCK">PLAYERBREAKBLOCK</a></td>
+                    <td>None</td>
+                    <td>Upon mining a block, there's a chance to fully regenerate all health.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Drill</th>
+                    <td>All levels (1): 0.1%</td>
+                    <td><a href="https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERBREAKBLOCK">PLAYERBREAKBLOCK</a></td>
+                    <td>None</td>
+                    <td>Upon mining a block, there's a very small chance to create a giant hole.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Entrepreneur</th>
+                    <td>All levels (1-4): 100%</td>
+                    <td><a href="https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERBREAKBLOCK">PLAYERBREAKBLOCK</a></td>
+                    <td>None</td>
+                    <td>Upon mining a block, there's a small chance to get N money, where N is the enchantment level.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Evoker</th>
+                    <td>All levels (1): 50%</td>
+                    <td><a href="https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERBOWHIT">PLAYERBOWHIT</a></td>
+                    <td>None</td>
+                    <td>Upon shooting a player, there's a chance to spawn evoker fangs on them - scary!</td>
+                </tr>
+                <tr>
+                    <th scope="row">Explosive</th>
+                    <td>All levels (1): 7%</td>
+                    <td><a href="https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERBOWHIT">PLAYERBOWHIT</a></td>
+                    <td>None</td>
+                    <td>Upon shooting a player, there's a tiny chance to fake an explosion of the victim.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Extrapolation</th>
+                    <td>Level 1: 10%<br>Level 2-3: 15%</td>
+                    <td><a href="https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERHITPLAYER">PLAYERHITPLAYER</a></td>
+                    <td>None</td>
+                    <td>Upon hitting a player, there's a chance to swiftly damage the victim three more times lightly.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Firefly</th>
+                    <td>All levels (1-3): 100%</td>
+                    <td><a href="https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERHITPLAYER">PLAYERHITPLAYER</a></td>
+                    <td>None</td>
+                    <td>Upon hitting a player that's on fire, deal a bit more damage to them.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Ghast</th>
+                    <td>All levels (1): 100%</td>
+                    <td><a href="https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERSHOOTBOW">PLAYERSHOOTBOW</a></td>
+                    <td>None</td>
+                    <td>Upon shooting the bow, shoot a fireball along with the arrow!</td>
+                </tr>
+                <tr>
+                    <th scope="row">Godmode</th>
+                    <td>All levels (1): 5%</td>
+                    <td><a href="https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERHITPLAYER">PLAYERHITPLAYER</a></td>
+                    <td>None</td>
+                    <td>Upon hitting a player, there's a tiny chance to become invulnerable for a certain period of time (random: 1-3 seconds).</td>
+                </tr>
+                <tr>
+                    <th scope="row">Goldenfish</th>
+                    <td>Level 1: 8%<br>Level 2-3: 10%</td>
+                    <td><a href="https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERBOWHIT">PLAYERBOWHIT</a></td>
+                    <td>None</td>
+                    <td>Upon shooting a player, there's a chance to spawn a VERY strong silverfish on them.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Grinder</th>
+                    <td>Level 1: 5%<br>Level 2-3: 8%</td>
+                    <td><a href="https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERHITPLAYER">PLAYERHITPLAYER</a></td>
+                    <td>None</td>
+                    <td>Upon hitting a player, there's a chance to increase your XP and decrease theirs.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Guardian Angel</th>
+                    <td>All levels (1): 100%</td>
+                    <td><a href="https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERHITPLAYER">PLAYERHITPLAYER</a></td>
+                    <td>10m</td>
+                    <td>When about to die, get teleported to your bed location, clear your debuffs and regenerate in peace.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Gun</th>
+                    <td>All levels (1): 100%</td>
+                    <td><a href="https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERINTERACT">PLAYERINTERACT</a></td>
+                    <td>10s</td>
+                    <td>Click this hoe and shoot an arrow.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Hocus Pocus</th>
+                    <td>Level 1-8: level%<br>Level 9: 3%<br>Level 10: 1%</td>
+                    <td><a href="https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERHITPLAYER">PLAYERHITPLAYER</a></td>
+                    <td>None</td>
+                    <td>Upon hitting a player, shuffle their hotbar... or their entire inventory!</td>
+                </tr>
+                <tr>
+                    <th scope="row">Last Chance</th>
+                    <td>All levels (1): 40%</td>
+                    <td><a href="https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERHITPLAYER">PLAYERHITPLAYER</a></td>
+                    <td>None</td>
+                    <td>Upon almost receiving lethal damage, you might get one more chance to escape by getting Speed and negating the received damage.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Lifesteal</th>
+                    <td>Level 1: 15%<br>Level 2: 20%</td>
+                    <td><a href="https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERHITPLAYER">PLAYERHITPLAYER</a></td>
+                    <td>None</td>
+                    <td>Upon hitting a player, you might steal some of their health.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Lightning</th>
+                    <td>Level 1: 17%<br>Level 2: 20%<br>Level 3: 22%</td>
+                    <td><a href="https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERBOWHIT">PLAYERBOWHIT</a></td>
+                    <td>None</td>
+                    <td>Upon shooting a player, a lightning might strike the poor dude.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Lottery</th>
+                    <td>All levels (1): 1%</td>
+                    <td><a href="https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERHITPLAYER">PLAYERHITPLAYER</a></td>
+                    <td>None</td>
+                    <td>Upon hitting a player, there's a tiny chance to kill them but set yourself on 3 hearts (6 HP).</td>
+                </tr>
+                <tr>
+                    <th scope="row">Lucky</th>
+                    <td>Level 1: 5%<br>Level 2: 7%<br>Level 3: 5%</td>
+                    <td><a href="https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERBREAKBLOCK">PLAYERBREAKBLOCK</a></td>
+                    <td>None</td>
+                    <td>Upon mining coal ore, you might strike gold! Literally.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Martyrdom</th>
+                    <td>All levels (1): 100%</td>
+                    <td><a href="https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERHITPLAYER">PLAYERHITPLAYER</a></td>
+                    <td>None</td>
+                    <td>Upon dying, spawn a TNT on your grave.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Ninja</th>
+                    <td>All levels (1): 100%</td>
+                    <td><a href="https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERHITPLAYER">PLAYERHITPLAYER</a></td>
+                    <td>None</td>
+                    <td>Upon killing a player, get Speed and Jump Boost.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Norepinephrine</th>
+                    <td>All levels (1-5): 100%</td>
+                    <td><a href="https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERBOWHIT">PLAYERBOWHIT</a></td>
+                    <td>None</td>
+                    <td>Adrenaline for bows.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Obsidianium</th>
+                    <td>All levels (1): 100%</td>
+                    <td><a href="https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERMOVE">PLAYERMOVE</a></td>
+                    <td>None</td>
+                    <td>When moving on obsidian, get Speed and Strength for a moment.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Parasite</th>
+                    <td>All levels (1-3): 100%</td>
+                    <td><a href="https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERHITPLAYER">PLAYERHITPLAYER</a></td>
+                    <td>None</td>
+                    <td>Upon hitting a player for 9+ HP, get satiated and obtain Strength.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Parkour</th>
+                    <td>All levels (1-2): 15%</td>
+                    <td><a href="https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERGOTHURT">PLAYERGOTHURT</a></td>
+                    <td>Level 1: 5s<br>Level 2: 7s</td>
+                    <td>There's a small chance to not receive fall damage.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Penetrator</th>
+                    <td>Level 1-3: 20%<br>Level 4-5: 15%<br>Level 6: 17%<br>Level 9-10: 15%</td>
+                    <td><a href="https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERHITPLAYER">PLAYERHITPLAYER</a></td>
+                    <td>None</td>
+                    <td>Penetrate your opponent's armor.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Pesceterian</th>
+                    <td>All levels (1-3): 100%</td>
+                    <td><a href="https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYEREAT">PLAYEREAT</a></td>
+                    <td>None</td>
+                    <td>When eating fish, get Saturation and restore some health.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Phoenix</th>
+                    <td>All levels (1): 100%</td>
+                    <td><a href="https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYEBREAKITEM">PLAYERBREAKITEM</a></td>
+                    <td>None</td>
+                    <td>Upon breaking your tool, get a new one. A fresh new one.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Pickpocket</th>
+                    <td>Level 1: 2%<br>Level 2: 4%<br>Level 3: 6%<br>Level 4: 7%<br>Level 5: 8%</td>
+                    <td><a href="https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERHITPLAYER">PLAYERHITPLAYER</a></td>
+                    <td>None</td>
+                    <td>Upon hitting a player, there's a small chance to make their jaw (and hand) drop.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Poison</th>
+                    <td>All levels (1): 15%</td>
+                    <td><a href="https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERBOWHIT">PLAYERBOWHIT</a></td>
+                    <td>None</td>
+                    <td>Upon shooting a player, there's a small chance to poison them.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Reciprocation</th>
+                    <td>Level 1: 25%<br>Level 2-3: 30%</td>
+                    <td><a href="https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERHITPLAYER">PLAYERHITPLAYER</a></td>
+                    <td>None</td>
+                    <td>Upon hitting a player, there's a chance to make them slower.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Reduce</th>
+                    <td>Level 1: 20%<br>Level 2: 25%</td>
+                    <td><a href="https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERHITPLAYER">PLAYERHITPLAYER</a></td>
+                    <td>None</td>
+                    <td>Upon being hit, there's a chance to reduce that damage to only 30%.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Rekt</th>
+                    <td>Level 1: 5%<br>Level 2: 8%</td>
+                    <td><a href="https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERHITPLAYER">PLAYERHITPLAYER</a></td>
+                    <td>None</td>
+                    <td>Upon being hit, there's a chance to teleport the damager to a random place - potentionally to a suffocating one.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Robber</th>
+                    <td>Level 1: 2%<br>Level 2: 4<br>Level 3: 6%<br>Level 4: 8%<br>Level 5: 10%</td>
+                    <td><a href="https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERHITPLAYER">PLAYERHITPLAYER</a></td>
+                    <td>None</td>
+                    <td>Upon hitting a player, there's a chance to steal the victim's hand!</td>
+                </tr>
+                <tr>
+                    <th scope="row">Saunabuffs</th>
+                    <td>All levels (1): 100%</td>
+                    <td><a href="https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERGOTHURT">PLAYERGOTHURT</a></td>
+                    <td>None</td>
+                    <td>Damage in the Nether is decreased a lot.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Seep</th>
+                    <td>All levels (1): 100%</td>
+                    <td><a href="https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERBOWHIT">PLAYERBOWHIT</a></td>
+                    <td>None</td>
+                    <td>Upon shooting a player who's blocking, deal 5 true damage to them.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Severe</th>
+                    <td>All levels (1): 1%</td>
+                    <td><a href="https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERBOWHIT">PLAYERBOWHIT</a></td>
+                    <td>None</td>
+                    <td>Upon shooting a player, there's a tiny chance to deal 11 true damage to them.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Shield</th>
+                    <td>All levels (1-2): 100%</td>
+                    <td><a href="https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERHITPLAYER">PLAYERHITPLAYER</a></td>
+                    <td>None</td>
+                    <td>Upon being hit when under 4 HP, get Speed and Absorption.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Stealthy</th>
+                    <td>All levels (1-3): 100%</td>
+                    <td><a href="https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERHITPLAYER">PLAYERHITPLAYER</a></td>
+                    <td>None</td>
+                    <td>Upon hitting a player while sneaking, increase the dealt damage.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Stunning</th>
+                    <td>All levels (1): 10%</td>
+                    <td><a href="https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERHITPLAYER">PLAYERHITPLAYER</a></td>
+                    <td>None</td>
+                    <td>Upon hitting a player, there's a chance to stun them - make 'em blind, slow and tired.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Suffocation</th>
+                    <td>All levels (1): 100%</td>
+                    <td><a href="https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERHITPLAYER">PLAYERHITPLAYER</a></td>
+                    <td>None</td>
+                    <td>Upon hitting a player, there's a chance to spawn a bunch of sand on top of them.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Swimmer</th>
+                    <td>All levels (1): 100%</td>
+                    <td><a href="https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERBREAKBLOCK">PLAYERBREAKBLOCK</a></td>
+                    <td>None</td>
+                    <td>Upon breaking a block while swimming (not just being underwater), get Regeneration.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Thorncover</th>
+                    <td>All levels (1): 100%</td>
+                    <td><a href="https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERGOTHURT">PLAYERGOTHURT</a></td>
+                    <td>None</td>
+                    <td>Upon being damaged by thorns, just don't.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Thunder</th>
+                    <td>Level 1: 10%<br>Level 2: 15%</td>
+                    <td><a href="https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERHITPLAYER">PLAYERHITPLAYER</a></td>
+                    <td>None</td>
+                    <td>Upon hitting a player, strike a lightning on them.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Toolsmith</th>
+                    <td>All levels (1): 1%</td>
+                    <td><a href="https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERBREAKBLOCK">PLAYERBREAKBLOCK</a></td>
+                    <td>60s</td>
+                    <td>Upon breaking a block while sprinting, there's a chance to repair your hand.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Track</th>
+                    <td>All levels (1): 100%</td>
+                    <td><a href="https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERBOWHIT">PLAYERBOWHIT</a></td>
+                    <td>None</td>
+                    <td>Upon shooting a player, get their coordinates in your actionbar for some time.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Trail</th>
+                    <td>All levels (1-3): 100%</td>
+                    <td><a href="https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERMOVE">PLAYERMOVE</a></td>
+                    <td>None</td>
+                    <td>Get a fancy trail behind your feet.</td>
+                    <td>
+                </tr>
+                <tr>
+                    <th scope="row">Tuna</th>
+                    <td>All levels (1): 2%</td>
+                    <td><a href="https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERBREAKBLOCK">PLAYERBREAKBLOCK</a></td>
+                    <td>None</td>
+                    <td>Upon mining a block, there's a chance to get some cod. Please cook it.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Uno Reverse</th>
+                    <td>All levels (1): 30%</td>
+                    <td><a href="https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERBOWHIT">PLAYERBOWHIT</a></td>
+                    <td>None</td>
+                    <td>Upon being shot, you might as well damage the damager by 4 HP.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Vampire</th>
+                    <td>All levels (1): 100%</td>
+                    <td><a href="https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERHITPLAYER">PLAYERHITPLAYER</a></td>
+                    <td>None</td>
+                    <td>Upon killing a player, get Regeneration.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Vegan</th>
+                    <td>All levels (1-3): 100%</td>
+                    <td><a href="https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYEREAT">PLAYEREAT</a></td>
+                    <td>None</td>
+                    <td>Pesceterian for vegans.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Wither</th>
+                    <td>Level 1: 15%<br>Level 2-3: 20%</td>
+                    <td><a href="https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERHITPLAYER">PLAYERHITPLAYER</a></td>
+                    <td>None</td>
+                    <td>Upon hitting a player, there's a chance to wither them.</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
+
+</div>
+
+</body>
+</html>
